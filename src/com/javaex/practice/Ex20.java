@@ -11,11 +11,11 @@ public class Ex20 {
 		Random random = new Random();
 		int rd = random.nextInt(100);
 		// int s = (int)(Math.random()*100)+1;
-		
+
 		System.out.println("=====================\n   [숫자맞추기게임 시작]\n=====================");
 
 		while (true) {
-			System.out.println(rd); //숫자 값 보이기
+			//System.out.println(rd); // 숫자 값 보이기
 			System.out.print(">>");
 			int num = sc.nextInt();
 
@@ -26,12 +26,11 @@ public class Ex20 {
 			} else {
 				System.out.print("맞았습니다. \n게임을 종료하시겠습니까?(y/n) >>");
 				char yes = sc.next().charAt(0);
-				if(yes=='y') {
+				if (yes == 'y') {
 					rd = random.nextInt(100);
 					continue;
-			
-				}
-				else {
+
+				} else {
 					System.out.println("=====================\n   [숫자맞추기게임 종료]\n=====================");
 					break;
 				}

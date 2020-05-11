@@ -48,7 +48,7 @@ public class Ex19 {
 				break;
 			}
 
-		} while(result);
+		} while (result);
 
 	}
 
