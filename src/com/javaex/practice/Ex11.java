@@ -11,19 +11,12 @@ public class Ex11 {
 		int num = sc.nextInt();
 		int sum = 0;
 
-		if (num % 2 == 1) {
-			for (int i = 1; i <= num; i = i + 2) {
-				sum += i;
-			}
-			System.out.println("결과값: " + sum);
+		
+		for(int i=num;i>0; i=i-2) {
+			sum = sum + i;
+			
 		}
-
-		if (num % 2 == 0) {
-			for (int i = 0; i <= num; i = i + 2) {
-				sum += i;
-			}
-			System.out.println("결과값: " + sum);
-		}
+		System.out.println(sum);
 	}
 
 }
